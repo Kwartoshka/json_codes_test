@@ -1,13 +1,8 @@
 from json import JSONDecodeError
-
-
-def test_smth():
-    assert True
-
 import json
-
 from django.core.management import call_command
 from django.test import TestCase
+
 
 # Если файл уже существует и он не пустой, нужно знать стартовые параметры json
 def get_start_numbers(filename='codes.json'):

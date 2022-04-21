@@ -60,3 +60,4 @@ class Command(BaseCommand):
                 code = create_code(codes)
                 data[group].append(code)
             json.dump(data, file, ensure_ascii=False, indent=4)
+            self.stdout.write(self.style.SUCCESS(f'Создано {amount} кодов в группе {group}'))
